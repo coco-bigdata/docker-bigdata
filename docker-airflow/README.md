@@ -18,4 +18,7 @@ sudo docker compose up airflow-init
 sudo docker compose up -d
 sudo docker compose ps
 sudo docker compose run airflow-worker airflow info
+
+curl -LfO 'https://airflow.apache.org/docs/apache-airflow/2.4.0/airflow.sh'
+chmod +x airflow.sh
 ```
