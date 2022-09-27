@@ -106,6 +106,7 @@ apache-airflow-providers-slack           | 5.1.0
 apache-airflow-providers-sqlite          | 3.2.1
 apache-airflow-providers-ssh             | 3.1.0
 
+ENDPOINT_URL="http://localhost:8117/"
 curl -X GET  \
 >     --user "airflow:airflow" \
 >     "${ENDPOINT_URL}/api/v1/pools"
