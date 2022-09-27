@@ -32,4 +32,6 @@ curl -X GET  \
     "${ENDPOINT_URL}/api/v1/pools"
 
 sudo docker compose down --volumes --rmi all
+
+http://49.232.6.131:8117
 ```
