@@ -4,7 +4,7 @@ sudo docker run --rm "debian:bullseye-slim" bash -c 'numfmt --to iec $(echo $(($
 https://docs.docker.com/compose/install/
 sudo yum install docker-compose-plugin
 
-docker compose versionß
+docker compose version
 
 https://airflow.apache.org/docs/apache-airflow/2.4.0/docker-compose.yaml
 curl -LfO 'https://airflow.apache.org/docs/apache-airflow/2.4.0/docker-compose.yaml'
