@@ -17,3 +17,14 @@ services.airflow-triggerer.depends_on.airflow-init.condition contains "service_c
 services.airflow-webserver.depends_on.airflow-init.condition contains "service_completed_successfully", which is an invalid type, it should be a service_started, or a service_healthy
 services.airflow-worker.depends_on.airflow-init.condition contains "service_completed_successfully", which is an invalid type, it should be a service_started, or a service_healthy
 services.flower.depends_on.airflow-init.condition contains "service_completed_successfully", which is an invalid type, it should be a service_started, or a service_healthy
+
+rpm -ql docker-compose-plugin
+/usr/libexec/docker/cli-plugins/docker-compose
+/usr/share/doc/docker-compose-plugin-2.10.2
+/usr/share/doc/docker-compose-plugin-2.10.2/LICENSE
+/usr/share/doc/docker-compose-plugin-2.10.2/MAINTAINERS
+/usr/share/doc/docker-compose-plugin-2.10.2/NOTICE
+/usr/share/doc/docker-compose-plugin-2.10.2/README.md
+/usr/share/licenses/docker-compose-plugin-2.10.2
+/usr/share/licenses/docker-compose-plugin-2.10.2/LICENSE
+/usr/share/licenses/docker-compose-plugin-2.10.2/NOTICE
