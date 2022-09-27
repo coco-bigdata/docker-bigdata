@@ -1,0 +1,8 @@
+sudo docker run --rm "debian:bullseye-slim" bash -c 'numfmt --to iec $(echo $(($(getconf _PHYS_PAGES) * $(getconf PAGE_SIZE))))'
+[sudo] password for zhangchunsheng:
+Unable to find image 'debian:bullseye-slim' locally
+bullseye-slim: Pulling from library/debian
+a2abf6c4d29d: Already exists
+Digest: sha256:b0d53c872fd640c2af2608ba1e693cfc7dedea30abcd8f584b23d583ec6dadc7
+Status: Downloaded newer image for debian:bullseye-slim
+63G
