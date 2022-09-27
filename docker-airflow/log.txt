@@ -9,3 +9,11 @@ Status: Downloaded newer image for debian:bullseye-slim
 
 cat .env
 AIRFLOW_UID=1000
+
+sudo docker-compose up airflow-init
+ERROR: The Compose file './docker-compose.yaml' is invalid because:
+services.airflow-scheduler.depends_on.airflow-init.condition contains "service_completed_successfully", which is an invalid type, it should be a service_started, or a service_healthy
+services.airflow-triggerer.depends_on.airflow-init.condition contains "service_completed_successfully", which is an invalid type, it should be a service_started, or a service_healthy
+services.airflow-webserver.depends_on.airflow-init.condition contains "service_completed_successfully", which is an invalid type, it should be a service_started, or a service_healthy
+services.airflow-worker.depends_on.airflow-init.condition contains "service_completed_successfully", which is an invalid type, it should be a service_started, or a service_healthy
+services.flower.depends_on.airflow-init.condition contains "service_completed_successfully", which is an invalid type, it should be a service_started, or a service_healthy
