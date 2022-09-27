@@ -105,3 +105,22 @@ apache-airflow-providers-sftp            | 4.0.0
 apache-airflow-providers-slack           | 5.1.0
 apache-airflow-providers-sqlite          | 3.2.1
 apache-airflow-providers-ssh             | 3.1.0
+
+curl -X GET  \
+>     --user "airflow:airflow" \
+>     "${ENDPOINT_URL}/api/v1/pools"
+{
+  "pools": [
+    {
+      "description": "Default pool",
+      "name": "default_pool",
+      "occupied_slots": 0,
+      "open_slots": 128,
+      "queued_slots": 0,
+      "running_slots": 0,
+      "scheduled_slots": 0,
+      "slots": 128
+    }
+  ],
+  "total_entries": 1
+}

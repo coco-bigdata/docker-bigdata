@@ -21,4 +21,14 @@ sudo docker compose run airflow-worker airflow info
 
 curl -LfO 'https://airflow.apache.org/docs/apache-airflow/2.4.0/airflow.sh'
 chmod +x airflow.sh
+
+./airflow.sh info
+./airflow.sh bash
+./airflow.sh python
+
+ENDPOINT_URL="http://localhost:8117/"
+curl -X GET  \
+    --user "airflow:airflow" \
+    "${ENDPOINT_URL}/api/v1/pools"
+
 ```
