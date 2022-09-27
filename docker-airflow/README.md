@@ -34,4 +34,6 @@ curl -X GET  \
 sudo docker compose down --volumes --rmi all
 
 http://49.232.6.131:8117
+airflow
+airflow
 ```
