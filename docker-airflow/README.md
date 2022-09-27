@@ -17,4 +17,5 @@ sudo docker-compose up airflow-init
 sudo docker compose up airflow-init
 sudo docker compose up -d
 sudo docker compose ps
+sudo docker compose run airflow-worker airflow info
 ```

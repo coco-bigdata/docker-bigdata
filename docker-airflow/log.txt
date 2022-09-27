@@ -28,3 +28,80 @@ rpm -ql docker-compose-plugin
 /usr/share/licenses/docker-compose-plugin-2.10.2
 /usr/share/licenses/docker-compose-plugin-2.10.2/LICENSE
 /usr/share/licenses/docker-compose-plugin-2.10.2/NOTICE
+
+sudo docker compose run airflow-worker airflow info
+[+] Running 3/0
+ ⠿ Container docker-airflow-redis-1         Running                                                                                                     0.0s
+ ⠿ Container docker-airflow-postgres-1      Running                                                                                                     0.0s
+ ⠿ Container docker-airflow-airflow-init-1  Created                                                                                                     0.0s
+[+] Running 3/3
+ ⠿ Container docker-airflow-redis-1         Healthy                                                                                                     0.5s
+ ⠿ Container docker-airflow-postgres-1      Healthy                                                                                                     0.5s
+ ⠿ Container docker-airflow-airflow-init-1  Started                                                                                                     0.3s
+
+/home/airflow/.local/lib/python3.7/site-packages/airflow/configuration.py:367: FutureWarning: The auth_backends setting in [api] has had airflow.api.auth.backend.session added in the running config, which is needed by the UI. Please update your config before Apache Airflow 3.0.
+  FutureWarning,
+
+Apache Airflow
+version                | 2.4.0
+executor               | CeleryExecutor
+task_logging_handler   | airflow.utils.log.file_task_handler.FileTaskHandler
+sql_alchemy_conn       | postgresql+psycopg2://airflow:airflow@postgres/airflow
+dags_folder            | /opt/airflow/dags
+plugins_folder         | /opt/airflow/plugins
+base_log_folder        | /opt/airflow/logs
+remote_base_log_folder |
+
+
+System info
+OS              | Linux
+architecture    | x86_64
+uname           | uname_result(system='Linux', node='375220a43298', release='3.10.0-1160.45.1.el7.x86_64', version='#1 SMP Wed Oct 13 17:20:51 UTC 2021',
+                | machine='x86_64', processor='')
+locale          | ('en_US', 'UTF-8')
+python_version  | 3.7.14 (default, Sep 13 2022, 02:30:55)  [GCC 10.2.1 20210110]
+python_location | /usr/local/bin/python
+
+
+Tools info
+git             | NOT AVAILABLE
+ssh             | OpenSSH_8.4p1 Debian-5+deb11u1, OpenSSL 1.1.1n  15 Mar 2022
+kubectl         | NOT AVAILABLE
+gcloud          | NOT AVAILABLE
+cloud_sql_proxy | NOT AVAILABLE
+mysql           | mysql  Ver 8.0.30 for Linux on x86_64 (MySQL Community Server - GPL)
+sqlite3         | 3.34.1 2021-01-20 14:10:07 10e20c0b43500cfb9bbc0eaa061c57514f715d87238f4d835880cd846b9ealt1
+psql            | psql (PostgreSQL) 14.5 (Debian 14.5-1.pgdg110+1)
+
+
+Paths info
+airflow_home    | /opt/airflow
+system_path     | /root/bin:/home/airflow/.local/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+python_path     | /home/airflow/.local/bin:/usr/local/lib/python37.zip:/usr/local/lib/python3.7:/usr/local/lib/python3.7/lib-dynload:/home/airflow/.local/lib
+                | /python3.7/site-packages:/usr/local/lib/python3.7/site-packages:/opt/airflow/dags:/opt/airflow/config:/opt/airflow/plugins
+airflow_on_path | True
+
+
+Providers info
+apache-airflow-providers-amazon          | 5.1.0
+apache-airflow-providers-celery          | 3.0.0
+apache-airflow-providers-cncf-kubernetes | 4.3.0
+apache-airflow-providers-common-sql      | 1.2.0
+apache-airflow-providers-docker          | 3.1.0
+apache-airflow-providers-elasticsearch   | 4.2.0
+apache-airflow-providers-ftp             | 3.1.0
+apache-airflow-providers-google          | 8.3.0
+apache-airflow-providers-grpc            | 3.0.0
+apache-airflow-providers-hashicorp       | 3.1.0
+apache-airflow-providers-http            | 4.0.0
+apache-airflow-providers-imap            | 3.0.0
+apache-airflow-providers-microsoft-azure | 4.2.0
+apache-airflow-providers-mysql           | 3.2.0
+apache-airflow-providers-odbc            | 3.1.1
+apache-airflow-providers-postgres        | 5.2.1
+apache-airflow-providers-redis           | 3.0.0
+apache-airflow-providers-sendgrid        | 3.0.0
+apache-airflow-providers-sftp            | 4.0.0
+apache-airflow-providers-slack           | 5.1.0
+apache-airflow-providers-sqlite          | 3.2.1
+apache-airflow-providers-ssh             | 3.1.0
