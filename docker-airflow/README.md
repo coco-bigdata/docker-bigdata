@@ -15,4 +15,6 @@ echo -e "AIRFLOW_UID=$(id -u)" > .env
 sudo docker-compose up airflow-init
 
 sudo docker compose up airflow-init
+sudo docker compose up -d
+sudo docker compose ps
 ```
